@@ -27,9 +27,11 @@ function App() {
           <Switch>
             {
             user ? 
+            <>
               <Route path="/"> 
                 <DashBoard /> 
               </Route> 
+            </>
             : 
               <Route path="/"> 
                 <Login /> 
