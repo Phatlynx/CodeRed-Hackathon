@@ -5,6 +5,7 @@ import '../css/App.css';
 
 import DashBoard from './DashBoard';
 import Option from './Option';
+import Form from './Form';
 
 import firebase from '../config/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -31,6 +32,9 @@ function App() {
               <Route path="/"> 
                 <DashBoard /> 
               </Route> 
+              <Route path="/add">
+                <Form />
+              </Route>
             </>
             : 
               <Route path="/"> 
